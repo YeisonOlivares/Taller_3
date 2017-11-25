@@ -30,7 +30,9 @@ public Usuario(String nombres, String apPaterno,String apMaterno,String correo,S
 }
 
 public double calcularPuntaje(){
-//Incluir código
+//Incluir códigoPuntaje Usuario = Suma de Factor páginas * 0,7 + Suma de Factor grupo * 0,3
+double factorPagina = 0;
+double factorGrupo = 0;
 }
 
 public String getNombres (){
@@ -47,6 +49,50 @@ public String getApMaterno (){
 
 public String getCorreo (){
     return this.correo;
+}
+
+public String getPassword(){
+    return this.password;
+}
+
+public String getFechaNacimiento(){
+    return this.fechaNacimiento;
+}
+
+public char getSexo(){
+    return this.sexo;
+}
+
+public ListaUsuario getListaAmigo(){
+        return this.listaAmigos;
+    }
+
+public void setNombres(String nombres){
+    this.nombres = nombres;
+}
+
+public void setApPaterno(String apPaterno){
+    this.apPaterno = apPaterno;
+}
+
+public void setApMaterno(String apMaterno){
+    this.apMaterno = apMaterno;
+}
+
+public void setCorreo(String correo){
+    this.correo = correo;
+}
+
+public void setPassword(String password){
+    this.password = password;
+}
+
+public void setFechaNacimiento(String fechaNacimiento){
+    this.fechaNacimiento = fechaNacimiento;
+}
+
+public void setSexo(char sexo){
+    this.sexo = sexo;
 }
 
 }

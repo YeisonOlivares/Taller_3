@@ -7,7 +7,7 @@ package taller_3;
 
 /**
  *
- * @author Wolf Paradise
+ * @author Yeison Olivares - Rodrigo Dominguez
  */
 public class Usuario {
     private String nombres;

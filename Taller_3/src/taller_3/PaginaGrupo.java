@@ -12,7 +12,7 @@ package taller_3;
 public abstract class PaginaGrupo {
     
     private String nombre;
-    private Usuario administrador;
+    Usuario administrador;
     private int identificador;
     private String fechaCreacion;
     private ListaUsuario listaMiembros;

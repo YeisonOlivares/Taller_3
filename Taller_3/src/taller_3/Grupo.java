@@ -12,7 +12,6 @@ package taller_3;
 public class Grupo extends PaginaGrupo{
     
     private ListaUsuario listaAdministradores;
-    private ListaUsuario listaUsuarios;
     
     
     public Grupo(String nombre, Usuario creador){
@@ -27,7 +26,7 @@ public class Grupo extends PaginaGrupo{
     
     @Override
     public double calcularFactor(){
-        double factor = this.listaAdministradores.getCantUsuario() + this.listaUsuarios.getCantUsuario();
+        double factor= super.getListaMiembros().getCantUsuario() + this.listaAdministradores.getCantUsuario();
         return factor;
     }
     

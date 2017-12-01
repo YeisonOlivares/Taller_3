@@ -17,7 +17,6 @@ public class Grupo extends PaginaGrupo{
     public Grupo(String nombre, Usuario creador){
         super(nombre,creador);
         this.listaAdministradores = null;
-        this.listaUsuarios = null;
     }
     
     public void cambiarAdministrador(Usuario administrador){

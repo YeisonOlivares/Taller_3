@@ -32,4 +32,75 @@ public class FacebookImpl implements Facebook {
     public ListaPaginaGrupo getListaGrupo(){
         return this.listaGrupo;
     }
+
+    @Override
+    public boolean registrarse(Usuario usuario){
+        NodoSimple aux=this.listaUsuarios.getHead();
+        for(int i = 0; i<this.listaUsuarios.getCantUsuario();i++){
+           if(aux.getUsuario().getCorreo().equalsIgnoreCase(usuario.getCorreo())){
+               return false;
+           }else{
+               aux = aux.getNext();
+           }
+        }
+        this.listaUsuarios.agregarUsuario(usuario);
+        return true;
+    }
+
+    @Override
+    public void iniciarSesion(String corre, String password) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean agregarAmigo(String correoAmigo) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public boolean eliminarAmigo(String correoaAmigo) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void crearPagina(Pagina pagina) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void crearGrupo(Grupo grupo) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void agregarAmigoGrupo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void unirsePagina() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void abandonarPagina() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void abandonarGrupo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void visualizarPuntajes() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void cerrarSesion() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
 }

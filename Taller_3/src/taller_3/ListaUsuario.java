@@ -23,6 +23,10 @@ public class ListaUsuario {
         return this.cantUsuarios;
     }
     
+    public NodoSimple getHead(){
+        return this.head;
+    }
+    
     public boolean agregarUsuario(Usuario usuario){
         NodoSimple nuevoNodo = new NodoSimple(usuario);
         NodoSimple aux = this.head;
@@ -71,3 +75,4 @@ public class ListaUsuario {
     }
     
 }
+

@@ -48,8 +48,14 @@ public class FacebookImpl implements Facebook {
     }
 
     @Override
-    public void iniciarSesion(String corre, String password) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void iniciarSesion(String correo, String password) {
+        NodoSimple aux = this.listaUsuarios.getHead();
+        for(int i =0; i<this.listaUsuarios.getCantUsuario();i++){
+            if(aux.getUsuario().getCorreo().equalsIgnoreCase(correo) && aux.getUsuario().getPassword().equals(password)){
+                
+            }
+        }
+        
     }
 
     @Override

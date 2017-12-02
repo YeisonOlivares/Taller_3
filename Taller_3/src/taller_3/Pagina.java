@@ -19,11 +19,10 @@ public class Pagina extends PaginaGrupo{
         this.clasificacion = clasificacion;
     }
     
-    @Override
+   @Override
     public double calcularFactor(){
-        double aux=0;
-        
-        return aux;
+        double factor= super.getListaMiembros().getCantUsuario();
+        return factor;
     }
     
     public String getClasificacion(){

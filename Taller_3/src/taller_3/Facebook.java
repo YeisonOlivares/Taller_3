@@ -13,7 +13,7 @@ public interface Facebook{
     
    public boolean registrarse(Usuario usuario);
    
-   public void iniciarSesion(String corre, String password);
+   public void iniciarSesion(String correo, String password);
    
    public boolean agregarAmigo(String correoAmigo);
    
@@ -36,3 +36,4 @@ public interface Facebook{
    public void cerrarSesion();
     
 }
+
